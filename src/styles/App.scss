@@ -1,0 +1,7 @@
+@use 'variables';
+
+body {
+  font-size: variables.$primaryFontSize;
+  font-family: variables.$font-stack;
+  background-color: variables.$neutralCream;
+}
