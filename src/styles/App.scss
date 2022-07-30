@@ -1,7 +1,37 @@
 @use 'variables';
+@import-normalize;
 
 body {
   font-size: variables.$primaryFontSize;
   font-family: variables.$font-stack;
   background-color: variables.$neutralCream;
+  margin: 0.5rem;
+}
+
+p {
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.mb-half {
+  margin-bottom: 0.5rem;
+}
+
+.font-bold {
+  font-weight: 700;
 }

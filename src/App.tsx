@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
+import Balance from './components/Balance';
 import './styles/App.scss';
 
 function App() {
@@ -16,9 +17,8 @@ function App() {
 
           </head>
           <body>
-
-            My balance
-            $921.48
+            <Balance balance={921.48} />
+      
 
             Spending - Last 7 days
 
