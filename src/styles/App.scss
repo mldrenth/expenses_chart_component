@@ -1,5 +1,5 @@
 @use 'variables';
-@import-normalize;
+
 
 body {
   font-size: variables.$primaryFontSize;
@@ -18,6 +18,14 @@ p {
   margin: 0;
 }
 
+.text-dark-brown {
+  color: variables.$neutralDarkBrown
+}
+
+.text-medium-brown {
+  color: variables.$neutralMediumBrown
+}
+
 .flex {
   display: flex;
 }
@@ -32,6 +40,10 @@ p {
 
 .justify-content-between {
   justify-content: space-between;
+}
+
+.justify-content-evenly {
+  justify-content: space-evenly;
 }
 
 .mb-half {

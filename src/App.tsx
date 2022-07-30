@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import Balance from './components/Balance';
 import './styles/App.scss';
+import SpendingOverview from './components/SpendingOverview';
 
 function App() {
   return (
@@ -18,24 +19,7 @@ function App() {
           </head>
           <body>
             <Balance balance={921.48} />
-      
-
-            Spending - Last 7 days
-
-            mon
-            tue
-            wed
-            thu
-            fri
-            sat
-            sun
-
-            Total this month
-            $478.33
-
-            +2.4%
-            from last month
-
+      <SpendingOverview/>
             <div className="attribution">
               Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
               Coded by <a href="#">Marijke Drenth</a>.
