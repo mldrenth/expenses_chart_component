@@ -1,12 +1,17 @@
 @use '../variables';
 
 .bar-container {
-    height: 50vh;
+    height: 30vh;
+    margin-top: 3rem;
 }
 
 .bar {
     background-color: variables.$primaryRed;
     width: 2.5rem;
-    height: 100%;
     border-radius: 3px;
+    margin-top: auto;
 }
+
+.bar--max {
+        background-color: variables.$primaryCyan;
+    }
