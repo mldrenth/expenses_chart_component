@@ -1,17 +1,26 @@
 @use '../variables';
 
 .bar-container {
-    height: 30vh;
-    margin-top: 3rem;
+    margin-top: auto;  
 }
 
 .bar {
     background-color: variables.$primaryRed;
     width: 2.5rem;
+    height: 90%;
     border-radius: 3px;
     margin-top: auto;
+    cursor: pointer;
 }
 
 .bar--max {
         background-color: variables.$primaryCyan;
     }
+
+.bar-tooltip {
+    background-color: variables.$neutralDarkBrown;
+    color: variables.$neutralCream;
+    border-radius: 3px;
+    padding: .2rem;
+    margin-bottom: 0.2rem;
+}

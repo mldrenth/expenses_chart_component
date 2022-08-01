@@ -19,7 +19,7 @@ const SpendingOverview = () => {
     return (
         <div className='overview-card'>
             <p className='font-bold text-dark-brown'>Spending - Last 7 Days</p>
-            <div className='flex justify-content-evenly align-items-end'>{bars()}</div>
+            <div className='flex justify-content-evenly align-items-end bars-container'>{bars()}</div>
             <div className='divider'></div>
             <div className='flex flex-row justify-content-between'>
                 <div><p className='text-medium-brown'>Total this month
