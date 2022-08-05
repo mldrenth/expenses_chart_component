@@ -1,21 +1,30 @@
 @use '../variables';
 
 .bar-container {
-    margin-top: auto;  
+    margin-top: auto;
+    width: 2.7rem;
 }
 
 .bar {
     background-color: variables.$primaryRed;
-    width: 2.5rem;
-    height: 90%;
+    width: 2.7rem;
+    height: 70%;
     border-radius: 3px;
     margin-top: auto;
     cursor: pointer;
 }
 
+.bar:hover {
+    background-color: lighten($color: variables.$primaryRed, $amount: 10%);
+}
+
 .bar--max {
-        background-color: variables.$primaryCyan;
-    }
+    background-color: variables.$primaryCyan;
+}
+
+.bar--max:hover {
+    background-color: lighten($color: variables.$primaryCyan, $amount: 10%);
+}
 
 .bar-tooltip {
     background-color: variables.$neutralDarkBrown;
@@ -23,4 +32,5 @@
     border-radius: 3px;
     padding: .2rem;
     margin-bottom: 0.2rem;
+    height: 2rem;
 }

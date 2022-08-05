@@ -12,7 +12,7 @@ const SpendingOverview = () => {
 
     const bars = () => {
         return weeklySpending.map(entry => {
-            return <Bar day={entry.day} amount={entry.amount}  />
+            return <Bar day={entry.day} amount={entry.amount} />
         })
     }
 
@@ -23,7 +23,7 @@ const SpendingOverview = () => {
             <div className='divider'></div>
             <div className='flex flex-row justify-content-between'>
                 <div><p className='text-medium-brown'>Total this month
-                </p><p className='font-bold text-dark-brown'>$478.33</p></div> <div className='flex flex-column'><p className='font-bold text-dark-brown'>+2.4%</p><p className='text-medium-brown'>from last month</p></div></div>
+                </p><p className='font-bold text-dark-brown font-size-lg'>$478.33</p></div> <div className='flex flex-column'><p className='font-bold text-dark-brown mt-1 text-right'>+2.4%</p><p className='text-medium-brown'>from last month</p></div></div>
         </div>
     )
 }
