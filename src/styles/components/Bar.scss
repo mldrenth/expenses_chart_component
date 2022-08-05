@@ -18,11 +18,11 @@
     background-color: lighten($color: variables.$primaryRed, $amount: 10%);
 }
 
-.bar--max {
+.bar--today {
     background-color: variables.$primaryCyan;
 }
 
-.bar--max:hover {
+.bar--today:hover {
     background-color: lighten($color: variables.$primaryCyan, $amount: 10%);
 }
 

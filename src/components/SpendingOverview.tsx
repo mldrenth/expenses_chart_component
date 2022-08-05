@@ -9,10 +9,17 @@ import Bar from './Bar';
 
 const SpendingOverview = () => {
     const [weeklySpending, setWeeklySpending] = useState<SpendingProps[]>(data)
+    const daysOfTheWeek = new Map<number, string>([[1, "mon"],[2, "tue"],[3, "wed"],[4, "thu"],[5, "fri"],[6, "sat"],[7, "sun"]])
+    const dayOfWeekDigit: number = new Date().getDay()
+
+    const isCurrentDay = (day: string): boolean => {
+        let currentDayOfWeek = daysOfTheWeek.get(dayOfWeekDigit)
+        return day === currentDayOfWeek
+    }
 
     const bars = () => {
         return weeklySpending.map(entry => {
-            return <Bar day={entry.day} amount={entry.amount} />
+            return <Bar day={entry.day} amount={entry.amount} isCurrent={isCurrentDay(entry.day)} />
         })
     }
 
